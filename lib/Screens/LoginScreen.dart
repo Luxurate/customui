@@ -23,7 +23,7 @@ class _LoginScreenState extends State<LoginScreen> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Colors.blue,
+              Colors.deepPurple,
               Colors.purple,
             ],
           ),
@@ -75,6 +75,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   obscureText: true,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
+                      Color.fromARGB(33, 55, 6, 92);
                       return 'Please enter your password';
                     }
                     return null;
@@ -102,13 +103,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   },
                   child: _isLoading
                       ? CircularProgressIndicator(
-                          valueColor: AlwaysStoppedAnimation(Colors.white),
+                          valueColor:
+                              AlwaysStoppedAnimation(Colors.deepPurpleAccent),
                         )
                       : Text('Login'),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white,
+                    foregroundColor: Colors.deepPurple,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(20),
                     ),
                   ),
                 ),
