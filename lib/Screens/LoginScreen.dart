@@ -31,12 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(
-                  Icons.account_circle,
-                  size: 80,
-                  color: Colors.blue,
-                ),
-                SizedBox(height: 20),
+                SizedBox(height: 80),
                 TextFormField(
                   controller: _usernameController,
                   decoration: InputDecoration(
