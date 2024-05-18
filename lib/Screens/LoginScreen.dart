@@ -19,17 +19,13 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Colors.deepPurple,
-              Colors.purple,
-            ],
+          image: DecorationImage(
+            image: AssetImage('assets/Login.png'),
+            fit: BoxFit.fill,
           ),
         ),
         child: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(30.0),
           child: Form(
             key: _formKey,
             child: Column(
@@ -41,20 +37,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   color: Colors.blue,
                 ),
                 SizedBox(height: 20),
-                Text(
-                  'Login',
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                SizedBox(height: 20),
                 TextFormField(
                   controller: _usernameController,
                   decoration: InputDecoration(
                     labelText: 'Username',
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(20),
                     ),
                   ),
                   validator: (value) {
@@ -64,24 +52,23 @@ class _LoginScreenState extends State<LoginScreen> {
                     return null;
                   },
                 ),
+                SizedBox(height: 10),
                 TextFormField(
                   controller: _passwordController,
                   decoration: InputDecoration(
                     labelText: 'Password',
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(20),
                     ),
                   ),
                   obscureText: true,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      Color.fromARGB(33, 55, 6, 92);
                       return 'Please enter your password';
                     }
                     return null;
                   },
                 ),
-                SizedBox(height: 10),
                 SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () async {
@@ -103,14 +90,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   },
                   child: _isLoading
                       ? CircularProgressIndicator(
-                          valueColor:
-                              AlwaysStoppedAnimation(Colors.deepPurpleAccent),
+                          valueColor: AlwaysStoppedAnimation(Colors.white),
                         )
                       : Text('Login'),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.deepPurple,
+                    foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
                 ),
