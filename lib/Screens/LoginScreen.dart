@@ -38,7 +38,15 @@ class _LoginScreenState extends State<LoginScreen> {
                     labelText: 'Username',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),
+                      borderSide: BorderSide.none,
                     ),
+                    filled: true,
+                    fillColor: Colors.grey,
+                  ),
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.black,
+                    fontWeight: FontWeight.normal,
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -54,7 +62,15 @@ class _LoginScreenState extends State<LoginScreen> {
                     labelText: 'Password',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),
+                      borderSide: BorderSide.none,
                     ),
+                    filled: true,
+                    fillColor: Colors.grey,
+                  ),
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.normal,
+                    color: Colors.black,
                   ),
                   obscureText: true,
                   validator: (value) {
@@ -89,7 +105,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         )
                       : Text('Login'),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white,
+                    foregroundColor: Color.fromARGB(255, 106, 9, 233),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
