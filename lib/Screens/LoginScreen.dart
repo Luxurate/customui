@@ -101,10 +101,11 @@ class _LoginScreenState extends State<LoginScreen> {
                   },
                   child: _isLoading
                       ? CircularProgressIndicator(
-                          valueColor: AlwaysStoppedAnimation(Colors.white),
+                          valueColor: AlwaysStoppedAnimation(Colors.purple),
                         )
                       : Text('Login'),
                   style: ElevatedButton.styleFrom(
+
                     foregroundColor: Color.fromARGB(255, 106, 9, 233),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
