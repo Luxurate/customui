@@ -88,8 +88,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         _isLoading = true;
                       });
                       // Login logic goes here
-                      // For demo purposes, navigate to home screen
-                      await Future.delayed(Duration(seconds: 2));
+                      // For demo purpoes, navigate to home screen
+                      await Future.delayed(Duration(seconds: 3));
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(builder: (context) => HomePage()),
