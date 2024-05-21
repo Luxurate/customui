@@ -80,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     return null;
                   },
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: 23),
                 ElevatedButton(
                   onPressed: () async {
                     if (_formKey.currentState!.validate()) {
@@ -89,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       });
                       // Login logic goes here
                       // For demo purpoes, navigate to home screen
-                      await Future.delayed(Duration(seconds: 3));
+                      await Future.delayed(Duration(seconds: 2));
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(builder: (context) => HomePage()),
