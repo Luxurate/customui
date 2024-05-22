@@ -88,7 +88,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         _isLoading = true;
                       });
                       // Login logic goes here
-                      // For demo purpoes, navigate to home screen
+                      // For demo psdfgrpoes, navigate to home screen
                       await Future.delayed(Duration(seconds: 2));
                       Navigator.pushReplacement(
                         context,
