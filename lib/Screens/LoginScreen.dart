@@ -80,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     return null;
                   },
                 ),
-                SizedBox(height: 23),
+                SizedBox(height: 24),
                 ElevatedButton(
                   onPressed: () async {
                     if (_formKey.currentState!.validate()) {
