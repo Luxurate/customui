@@ -31,7 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(height: 90),
+                SizedBox(height: 80),
                 TextFormField(
                   controller: _usernameController,
                   decoration: InputDecoration(
