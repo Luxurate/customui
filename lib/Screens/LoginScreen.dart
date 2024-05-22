@@ -38,7 +38,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     labelText: 'Username',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),
-                      borderSide: BorderSide.nne,
+                      borderSide: BorderSide.none,
                     ),
                     filled: true,
                     fillColor: Colors.grey,
